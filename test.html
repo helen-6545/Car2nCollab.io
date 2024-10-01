@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link type="text/css" rel="stylesheet" href="looks.css"/>
+    <script src="//code.jquery.com/jquery.min.js"></script>
+</head>
+<body>
+
+    <div id ="testHeader">
+
+    </div>
+    <script>
+        $.get("header.html", function(data){
+            $("#testHeader").replaceWith(data);
+        });
+        </script><!--https://stackoverflow.com/questions/31954089/how-can-i-reuse-a-navigation-bar-on-multiple-pages-->
+
+    
+
+</body>
+</html>

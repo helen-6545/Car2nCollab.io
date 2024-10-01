@@ -4,8 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link type="text/css" rel="stylesheet" href="looks.css"/>
+    <script src="//code.jquery.com/jquery.min.js"></script>
 </head>
-<body>
+<body class = "background">
+    <div id ="examplesHeader"></div>
+
+    </div>
+    <script>
+        $.get("header.html", function(data){
+            $("#examplesHeader").replaceWith(data);
+        });
+        </script><!--source: https://stackoverflow.com/questions/31954089/how-can-i-reuse-a-navigation-bar-on-multiple-pages-->
+
+    <div class = "center"><!--centers content box-->
+    <div class = "content"><!--content bg color and border-->
+       
+        <div class = "dropDown">
+        <select name="comics" id="comics">
+            <option value="renfairies">Ren Fairies</option>
+            <option value="getngo">Get N Go</option>
+            <option value="hotelNine">The Hotel Nines</option>
+            <option value="edinMoore">Remembering Edin Moore</option>
+        </select>
+    <button id = "readButton" onClick="comicRefresh()">Let's read!</button></div>
+
+    <div class = "center"><!--centers objects-->
+    <div class = "comicDisplay">
+    <button class="arrow" onClick="previous()"><img class="arrowButtons" src="images/previousButton.png"></button>
+    <img id="currentPage" src="images/comics/renFairies/1.jpg">
+    <button class="arrow" onClick="next()"><img class="arrowButtons" src="images/nextButton.png"></button></div></div>
+
+
     
+</div>
+</div>
+</div>
+<script src="comicPage.js"></script>
 </body>
 </html>

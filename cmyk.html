@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link type="text/css" rel="stylesheet" href="looks.css"/>
+    <script src="//code.jquery.com/jquery.min.js"></script>
+</head>
+<body class = "background">
+    <div id ="cmykHeader"></div>
+
+    </div>
+    <script>
+        $.get("header.html", function(data){
+            $("#cmykHeader").replaceWith(data);
+        });
+        </script><!--source: https://stackoverflow.com/questions/31954089/how-can-i-reuse-a-navigation-bar-on-multiple-pages-->
+        
+        <div class = "center"><!--centers content box-->
+    <div class = "content"><!--content bg color and border-->
+
+        <div class = "group">
+    <p>Digital artwork can be made in RGB and in CMYK. CMYK is designed to stay true to color when printed. Most notably, it dulls overly saturated colors that a printer cannot replicate. Since everything for this club is being made with the intention to print, do a favor to your future self and work in CMYK from the beginning, especially if you use bright colors.</p>
+    <p class="italics">(Traditional artists disregard)</p>
+    <p class="paragraphBreak">As an example, here we have...</p>
+    <p> 1. a digital artwork drawn in RBG</p>
+    <p> 2. the same artwork automatically changed to CMYK</p>
+    <p> 3. the same artwork again, edited to add back the contrast and effects</p>
+    </p>
+    <p>In short, don't submit #1 or we'll print #2 and you'll be sad.</p>
+    <div class="center"><!--centers objects-->
+    <img class="threePics" src="images/cmyk_v1.jpg">
+    <img class="threePics" src="images/cmyk_v2.jpg">
+    <img class="threePics" src="images/cmyk_v3.jpg"></div>
+</div>
+</div>
+</div>
+</body>
+</html>

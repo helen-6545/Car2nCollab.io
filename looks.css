@@ -1,5 +1,5 @@
 .background{
-    background-color: yellow
+    background-color: #d4a875
 }
 
 .center{
@@ -10,10 +10,10 @@
 }
 
 .header{
-    background-color: orange;
+    background-color: #fba91e;
     border-left: 30px solid;
     border-right: 30px solid;
-    border-color: aqua;
+    border-color: yellow;
     width: 800px;
     display: flex;
     align-items: center;
@@ -22,8 +22,22 @@
 }
 
 .logo{
-    width: 70px;
-    margin: 10px;
+    width: 220px;
+    
+}
+.button{
+    width: 80px;
+    height: 180px;
+    margin: 20px;
+    background-color: transparent;
+    border-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.linkInfo{
+    text-decoration: none;
 }
 
 .links{
@@ -34,19 +48,104 @@
     justify-content: center;
 }
 
-.h1{
-    font-family:Verdana, Geneva, Tahoma, sans-serif
+.CC{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color:yellow;
+    text-shadow: 1px 1px 0 black;
+    font-size:50px;
+    width: 400px;
 }
 
 .content{
-    height: 200px;
+    height: 850px;
     width: 800px;
     border-left: 30px solid;
     border-right: 30px solid;
-    border-color: aqua;
+    border-color: yellow;
+    background-color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.group{
+    margin:20px;
+}
+
+.arrowButtons{
+    width: 60px;
+}
+.arrow{
+    width: 60px;
+    height: 70px;
+    margin: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: white
+}
+#currentPage{
+    width: 400px;
+}
+.comicDisplay{
+    width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
+#readButton{
+    font-size:larger;
+    background-color: #fba91e;
+    border-color: #fba91e;
+    margin: 10px;
+}
+
+.dropDown{
+    font-size:larger;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+
+#comics{
+    font-size:large;
+    background-color: #d4a875;
+    border-color: #d4a875;
+}
+
+.threePics{
+    width: 200px;
+    margin: 5px;
+}
+
+
+.links{
+    font-size:large;
+    background-color: yellow;
+    border-color: yellow;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    width: 120px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.WBart{
+    width:350px;
+    margin:15px;
+}
+
+.paragraphBreak{
+    margin-top:100px;
+}
+
+.italics{
+    font-style: italic;
+}
+
+.rules{
+    width:600px;
+    margin-right:70px;
+    margin-top:50px;
 }

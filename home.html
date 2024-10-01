@@ -5,25 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link type="text/css" rel="stylesheet" href="looks.css"/>
-    
+    <script src="//code.jquery.com/jquery.min.js"></script>
 </head>
 <body class = "background">
-    <div class = "center">
-        <div class = "header">
-            <h1>The Cartoonist Collaborative!</h1>
-            <img class="logo" src="images/logo.jpg"/>
-        </div>
-        </div>
-        <div class = "center">
-        <div class = "header">
-            <p class = "links"><a href="home.html">Home</a><a href="about.html">About</a><a href="rules.html">Submission</a></p>
-        </div></div>
-        <div class = "center">
-    <div class = "content">
+    <div id ="homeHeader"></div>
+
+    </div>
+    <script>
+        $.get("header.html", function(data){
+            $("#homeHeader").replaceWith(data);
+        });
+        </script><!--source: https://stackoverflow.com/questions/31954089/how-can-i-reuse-a-navigation-bar-on-multiple-pages-->
+        
+        <div class = "center"><!--centers object-->
+    <div class = "content"><!--content bg color and border-->
         <div class = "group">
-    <p>This is the home page!</p>
-    <p>test</p>
-    <p>test</p></div>
+            
+    <p>Welcome to the Cartoonist Collaborative! We focus on making collaborative short form creative works (primarily comics!) to publish in a zine once a year.</p>
+    <div class="center"><!--centers objects-->
+    <p class="WBart">We meet once a week during the semester, Thursdays from 6 to 8 in AJ 341. We discuss current projects, give feedback, and draw on the whiteboard.</p>
+        <img class="WBart" src="images/Whiteboard_art_1.png"></div>
+        <div class="center"><!--centers objects to make rows-->
+        <img class="WBart" src="images/Whiteboard_art_2.png">
+        <img class="WBart" src="images/Whiteboard_art_3.png"></div>
+</div>
 </div>
 </div>
 </body>
